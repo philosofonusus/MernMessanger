@@ -1,0 +1,25 @@
+// Basic styles and font
+@import "./_inc/style";
+@import "./_inc/font_family";
+
+// Utility classes
+@import "./utils/utils.scss";
+
+// Component's styles
+@import "./login.scss";
+@import "./register.scss";
+@import "./resetPassword.scss";
+@import "./authentication.scss";
+
+// Layouts
+@import "./layouts/Header";
+@import "./layouts/Sidebar";
+
+// Conversation
+@import "./Coversation/Conversation";
+
+@import "./messages.scss";
+
+@import "./conversations.scss";
+@import "./bottomNavbar.scss";
+@import "./FriendsList";

@@ -1,0 +1,231 @@
+@import "./paddings/paddings";
+@import "./margins/margins";
+
+@import "./sizes";
+@import "./elevations";
+
+.btn {
+   border: none;
+   text-transform: uppercase;
+   padding: 0.5rem 1.5rem;
+   border-radius: 0.2rem;
+   letter-spacing: 1px;
+   &:hover {
+      cursor: pointer;
+   }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+   margin: 0;
+}
+
+ul,
+ol {
+   list-style-type: none;
+}
+
+/*
+*  Display
+*/
+
+.d-flex {
+   display: flex;
+}
+
+.d-block {
+   display: block;
+}
+
+.d-none {
+   display: none;
+}
+
+.flex-wrap {
+   flex-wrap: wrap;
+}
+.fd-col {
+   flex-direction: column;
+}
+.fd-row {
+   flex-direction: row;
+}
+
+.spacer {
+   width: 100%;
+}
+
+.spacer-y {
+   height: 100%;
+}
+
+.text-white {
+   color: white;
+}
+
+.pos-abs {
+   position: absolute !important;
+}
+.pos-rel {
+   position: relative !important;
+}
+.pos-fxd {
+   position: fixed !important;
+}
+
+.to-center-before::before,
+.to-center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.float-right {
+   float: right;
+}
+.float-left {
+   float: left;
+}
+
+.top {
+   top: 0;
+}
+.top-1 {
+   top: 0.5rem;
+}
+.top-2 {
+   top: 1rem;
+}
+
+.bottom {
+   bottom: 0;
+}
+.right {
+   right: 0;
+}
+.bottom-1 {
+   bottom: 1rem;
+}
+.right-1 {
+   right: 0.5rem;
+}
+.right-2 {
+   right: 1rem;
+}
+
+.bg-red {
+   background-color: #f44336;
+}
+.bg-blue {
+   background-color: #2196f3;
+}
+.bg-purple {
+   background-color: #9c27b0;
+}
+.bg-teal {
+   background-color: #009688;
+}
+.bg-indigo {
+   background-color: #3f51b5;
+}
+
+.text-center {
+   text-align: center;
+}
+.ta-c {
+   text-align: center;
+}
+.ta-l {
+   text-align: left;
+}
+.ta-r {
+   text-align: right;
+}
+
+a {
+   text-decoration: none !important;
+}
+
+input {
+   &:focus {
+      outline: none;
+   }
+}
+
+.font-normal {
+   font-weight: normal;
+}
+.font-bold {
+   font-weight: bold;
+}
+
+.overflow-auto {
+   overflow: auto !important;
+}
+.overflow-hidden {
+   overflow: hidden !important;
+}
+.overflow-scroll {
+   overflow: scroll !important;
+}
+
+button {
+   text-transform: uppercase;
+   padding: 0.5rem 1rem;
+   font-weight: bolder;
+   letter-spacing: 1px;
+   &:focus {
+      outline: none;
+   }
+}
+.circle {
+   border-radius: 50%;
+}
+hr {
+   border-bottom: 1px solid #616161;
+}
+.rounded {
+   border-radius: 0.4rem;
+}
+.divider {
+   border: none;
+   height: 1px;
+   &.light {
+      background-color: #e0e0e0;
+   }
+   &.medium {
+      background-color: #9e9e9e;
+   }
+   &.dark {
+      background-color: #313131;
+   }
+}
+.pointer {
+   cursor: pointer;
+}
+
+.zi--1 {
+   z-index: -5;
+}
+.zi-0 {
+   z-index: 0;
+}
+.zi-1 {
+   z-index: 5;
+}
+.zi-2 {
+   z-index: 10;
+}
+.zi-3 {
+   z-index: 15;
+}
+.zi-4 {
+   z-index: 20;
+}
+.zi-5 {
+   z-index: 25;
+}

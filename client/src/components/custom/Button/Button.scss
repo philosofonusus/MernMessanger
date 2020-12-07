@@ -1,0 +1,64 @@
+// Colors
+$teal: #009688;
+$teald: #00695c;
+$pink: #e91e63;
+$pinkd: #ad1457;
+$orange: #ff5722;
+$oranged: #ff5722;
+
+@mixin buttonTheme($fc, $bg, $bgd) {
+   color: $fc;
+   background-color: $bg;
+   border: 1.4px solid $bg;
+   &:hover {
+      border-color: $bgd;
+      background-color: $bgd;
+   }
+}
+@mixin buttonBorder($fc, $bg) {
+   color: $bg;
+   &:hover {
+      color: $fc;
+      border-color: $bg;
+      background-color: $bg;
+   }
+}
+
+.custom-button {
+   letter-spacing: unset;
+   text-transform: uppercase;
+   font-family: Roboto !important;
+   cursor: pointer;
+
+   transition-property: background-color, color, border-color;
+   transition-duration: 300ms;
+   transition-timing-function: ease-in-out;
+
+   &.pill {
+      border-radius: 2rem;
+   }
+   &.w100 {
+      width: 100%;
+   }
+   &.teal {
+      @include buttonTheme(white, $teal, $teald);
+   }
+   &.pink {
+      @include buttonTheme(white, $pink, $pinkd);
+   }
+   &.orange {
+      @include buttonTheme(white, $orange, $oranged);
+   }
+   &.outlined {
+      background-color: transparent;
+      &.teal {
+         @include buttonBorder(white, $teal);
+      }
+      &.pink {
+         @include buttonBorder(white, $pink);
+      }
+      &.orange {
+         @include buttonBorder(white, $orange);
+      }
+   }
+}

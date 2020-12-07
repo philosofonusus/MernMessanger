@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1.0")
+      link(rel="stylesheet" type="text/css" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css")
+      title Authentication
+      style
+         include ./css/auth.pug.css
+
+   body
+      if(user)
+         .card.rounded.overflow-hidden.mx-auto.border.border-green-400.bg-white.rounded-b.mt-6.absolute.to-center
+            if(user.thumbnail)
+               .flex.items-center.px-6.py-4
+                  img.w-10.h-10.rounded-full.mr-4(src=user.thumbnail)
+                  .text-sm
+                     .text-lg.font-bold.text-gray-900.leading-none= user.name
+                     .text-gray-600= user.userName
+            else
+               .px-6.py-4
+                  .font-bold.text-xl.mb-2= user.name
+            .px-6
+               .text-green-700.text-md You have successfully logged in
+               .text-md
+                  span Redirecting in 
+                  span#counter
+                  span  s
+            .px-6.px-4.mb-4.mt-4
+               button.bg-transparent.text-gray-700.py-1.px-3.border.border-gray-600.rounded Open now
+   if(user)
+      script.
+         const user = !{JSON.stringify(user)}
+   script  
+      include ./js/auth.pug.js

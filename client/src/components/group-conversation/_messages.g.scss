@@ -1,0 +1,29 @@
+.conversation {
+   .hidden-scrollbar {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      padding-right: 17px;
+      box-sizing: content-box;
+   }
+   .message {
+      border-radius: 1rem;
+      width: max-content;
+      max-width: 16rem;
+      &.bg-blue {
+         background-color: #2196f3;
+      }
+      &.bg-grey {
+         background-color: #424242;
+         color: white;
+      }
+   }
+   .user-thumbnail {
+      height: 1.2rem;
+      width: 1.2rem;
+   }
+   .userName {
+      color: #616161;
+      font-size: 0.8em;
+   }
+}

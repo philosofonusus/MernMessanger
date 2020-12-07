@@ -1,0 +1,45 @@
+.authenticate {
+   background: linear-gradient(to right, rgb(127, 127, 213), rgb(134, 168, 231), #91eae4);
+   color: #212121;
+   .inner-card {
+      width: 44rem;
+      overflow: hidden;
+      .mobile-login {
+         width: 12rem;
+      }
+      .content {
+         background-color: white;
+      }
+      .forms {
+         background-color: rgba(255, 255, 255, 0.7);
+      }
+      .txt-sec {
+         color: #616161;
+      }
+      .con-with {
+         hr {
+            border-color: #bdbdbd;
+            width: 80%;
+         }
+         p {
+            background-color: white;
+            font-size: 0.95em;
+            color: #616161;
+         }
+      }
+   }
+   .or {
+      left: 50%;
+      bottom: 4.5rem;
+      transform: translate(-50%, -50%);
+      background-color: #ff5722;
+      color: white;
+      padding: 0.2rem;
+      border-radius: 50%;
+      height: 2.1rem;
+      width: 2.1rem;
+   }
+   .overlay {
+      background-color: rgba(255, 255, 255, 0.75);
+   }
+}

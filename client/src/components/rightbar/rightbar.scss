@@ -1,0 +1,56 @@
+.right-sidebar {
+   background-color: #313131;
+   border-left: 1px solid #282828;
+   .actions {
+      border-bottom: 1px solid #424242;
+      .i-icon-btn {
+         background-color: #252525;
+         height: 2rem;
+         min-width: 2rem;
+         color: #bdbdbd;
+         transition: background-color 0.3s ease-in-out;
+         border-radius: 50%;
+         font-size: 0.8rem;
+         position: relative;
+         cursor: pointer;
+         margin-top: 0.2rem;
+         margin-bottom: 0.2rem;
+         &:hover {
+            background-color: #282828;
+         }
+         &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
+      }
+   }
+   .members {
+      .member {
+         width: 2rem;
+         height: 2rem;
+         position: relative;
+         .active-dot {
+            height: 1rem;
+            width: 1rem;
+            background-color: #313131;
+            right: -0.1rem;
+            bottom: -0.2rem;
+            .dot {
+               background-color: #cddc39;
+               height: 0.5rem;
+               width: 0.5rem;
+            }
+         }
+      }
+   }
+}
+.expandable {
+   width: 0;
+   background-color: #313131;
+   transition: width 300ms ease-in-out;
+   &.active {
+      width: 18rem;
+   }
+}

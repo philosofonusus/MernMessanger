@@ -1,0 +1,15 @@
+.bottom-navbar {
+   background-color: #363636;
+   height: 62px;
+   .switcher {
+      i {
+         transition: font-size 150ms ease;
+      }
+      &.active {
+         color: #cddc39;
+         i {
+            font-size: 1.3em;
+         }
+      }
+   }
+}

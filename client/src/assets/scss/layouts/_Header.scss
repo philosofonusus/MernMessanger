@@ -1,0 +1,14 @@
+header {
+   height: 4rem;
+   background-color: #292929;
+   .group-name {
+      color: white;
+   }
+   img {
+      height: 2.5rem;
+      width: 2.5rem;
+      min-width: 2.5rem;
+      object-fit: cover;
+      object-position: center;
+   }
+}

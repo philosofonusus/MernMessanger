@@ -1,0 +1,25 @@
+.register {
+   .group-image {
+      width: 6rem;
+      height: 6rem;
+      &:hover {
+         .inner-overlay {
+            display: block;
+            cursor: pointer;
+         }
+      }
+      .inner-overlay {
+         display: none;
+         background-color: rgba(0, 0, 0, 0.35);
+         overflow: hidden;
+         input {
+            opacity: 0;
+            z-index: 10;
+         }
+      }
+      img {
+         object-fit: cover;
+         object-position: center;
+      }
+   }
+}

@@ -1,0 +1,39 @@
+.conversations {
+   background-color: #303030;
+   .cl-item {
+      cursor: pointer;
+      &:hover,
+      &.active {
+         background-color: #282828;
+      }
+      .title {
+         font-size: 1.15em;
+         color: #e0e0e0;
+      }
+      .message {
+         font-size: 0.9em;
+         color: #616161;
+      }
+      .time {
+         color: #757575;
+         font-size: 0.9em;
+      }
+      .initial,
+      img {
+         height: 2.8rem;
+         min-width: 2.8rem;
+      }
+      .initial {
+         background-color: teal;
+      }
+      img {
+         border-radius: 50%;
+         object-fit: cover;
+         object-position: center;
+      }
+      p {
+         font-size: 1em;
+         color: #e0e0e0;
+      }
+   }
+}

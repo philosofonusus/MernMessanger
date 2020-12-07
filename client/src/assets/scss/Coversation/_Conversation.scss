@@ -1,0 +1,16 @@
+.conversation {
+   background-color: #191919;
+   overflow-x: hidden;
+   .gc-wrapper {
+      height: calc(100vh - 4rem);
+      .bottom-message-bar {
+         border-top: 1px solid #212121;
+         input {
+            font-size: 1em;
+            background-color: #313131;
+            border-radius: 2rem;
+            color: #e0e0e0;
+         }
+      }
+   }
+}

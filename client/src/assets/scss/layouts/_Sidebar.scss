@@ -1,0 +1,44 @@
+.sidebar {
+   min-width: 18rem;
+   max-width: 18rem;
+   height: 100vh;
+   background-color: #363636;
+   color: white;
+   .thumbnail {
+      height: 2.6rem;
+      min-width: 2.6rem;
+   }
+   .username {
+      font-size: 0.9em;
+      color: #757575;
+   }
+   .search {
+      background-color: #303030;
+      border-radius: 2rem;
+      input {
+         height: 2rem;
+         background-color: transparent;
+         color: #e0e0e0;
+      }
+      i {
+         top: 0.65rem;
+         right: 0.9rem;
+         color: #bdbdbd;
+         font-size: 0.8em;
+      }
+   }
+   .actions {
+      i {
+         height: 2rem;
+         width: 2rem;
+         background-color: #303030;
+         margin-top: 0.3rem;
+         &::before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+         }
+      }
+   }
+}
